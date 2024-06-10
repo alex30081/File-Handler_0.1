@@ -11,9 +11,7 @@ public class Main {
         getOutput("RESULT: " + result);
         getOutput("FILE CONTENT: " + content);
     }
-
     private static void getOutput(String output) {
         System.out.println(output);
     }
-
 }

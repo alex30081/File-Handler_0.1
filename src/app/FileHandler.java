@@ -5,8 +5,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class FileHandler {
-
-
     public String writeFile(String fileName, String fileContent) {
         try (FileWriter fw =
                      new FileWriter(Constants.BASE_PATH + fileName + ".txt")) {
@@ -16,7 +14,6 @@ public class FileHandler {
             return e.getMessage();
         }
     }
-
     public String readFile(String path) {
         try (FileReader reader = new FileReader(path)) {
             int sym;
